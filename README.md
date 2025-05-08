@@ -13,7 +13,7 @@ This project delivers a robust framework for analyzing and visualizing customer 
   Calculates the difference between expected and actual complaint shares, classifying operators as "Yüksək" (High), "Qənaətbəxş" (Satisfactory), or "Zəif" (Poor) based on their complaint index.
 
 - **Professional Visualizations:**  
-  Generates scatter plots (in log scale) comparing expected vs. actual complaint shares, with intuitive color and size coding for operator performance and complaint volume.
+  Generates log-log scatter plots comparing expected vs. actual complaint shares, with intuitive color and size coding for operator performance and complaint volume.
 
 - **Customizable & Extensible:**  
   Easily adapt thresholds, visual styles, and data sources for different regulatory environments or reporting requirements.
@@ -49,8 +49,8 @@ This project delivers a robust framework for analyzing and visualizing customer 
 ```
 .
 ├── main.Rmd           # Main R Markdown analysis and visualization script
-├── data/              # (Optional) Data files and sources
-├── output/            # (Optional) Generated reports and figures
+├── data/              # Data files and sources
+├── output/            # Generated reports and figures
 ├── README.md          # Project documentation
 └── (other supporting scripts/files)
 ```
