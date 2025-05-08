@@ -1,3 +1,13 @@
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Usage](#usage)
+- [Example Visualization](#example-visualization)
+- [Requirements](#requirements)
+- [Project Structure](#project-structure)
+- [License](#license)
+- [Contact](#contact)
+
 # Postal Operator Complaint Analysis & Visualization
 
 ## Overview
@@ -25,9 +35,8 @@ This project delivers a robust framework for analyzing and visualizing customer 
 
 2. **Render the Report:**  
    Use R Markdown to generate a PDF or HTML report:
-   ```r
-  Rscript -e "rmarkdown::render('main.Rmd', output_file = 'output/Report.pdf')"
-   ```
+```r
+Rscript -e "rmarkdown::render('main.Rmd', output_file = 'output/Report.pdf')"
 
 3. **Interpret the Results:**  
    - Operators above the diagonal line have higher-than-expected complaint shares and may require regulatory attention.
