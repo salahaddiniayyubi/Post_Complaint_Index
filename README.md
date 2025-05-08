@@ -55,7 +55,8 @@ Rscript -e "rmarkdown::render('main.Rmd', output_file = 'output/Report.pdf')"
 - LaTeX distribution (for PDF output)
 
 ## Project Structure
-
+```markdown
+.
 ├── main.Rmd           # Main R Markdown analysis and visualization script
 ├── data/              # Data files and sources
 │   ├── sample.csv      # Example data file
@@ -64,7 +65,7 @@ Rscript -e "rmarkdown::render('main.Rmd', output_file = 'output/Report.pdf')"
 ├── README.md          # Project documentation
 ├── LICENSE            # License information
 └── (other supporting scripts/files)
-
+``` 
 
 ## License
 
