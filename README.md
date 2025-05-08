@@ -37,6 +37,7 @@ This project delivers a robust framework for analyzing and visualizing customer 
    Use R Markdown to generate a PDF or HTML report:
 ```r
 Rscript -e "rmarkdown::render('main.Rmd', output_file = 'output/Report.pdf')"
+```
 
 3. **Interpret the Results:**  
    - Operators above the diagonal line have higher-than-expected complaint shares and may require regulatory attention.
