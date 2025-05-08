@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.5.3)  8 MAY 2025 13:08
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.5.3)  8 MAY 2025 18:34
  restricted system commands enabled.
 **output/Report.tex
 (./output/Report.tex
@@ -1574,7 +1574,7 @@ nput line 503.
 
 
 [5<./output/Report_files/figure-latex/plot-1.png>]
-Overfull \hbox (0.14061pt too wide) in paragraph at lines 563--566
+Overfull \hbox (0.14061pt too wide) in paragraph at lines 558--561
 []$\TU/Arial(0)/m/n/10 h t t p s : / / w w w . o f c o m . o r g . u k / _ _ d 
 a t a / a s s e t s / p d f _ f i l e / 0 0 2 3 / 2 6 8 1 7 5 / a n n u al - m 
 o n i t o r i ng - u p d a te - p o s t al - m a r k et -
@@ -1592,11 +1592,11 @@ L3 programming layer <2025-04-14>
 Here is how much of LuaTeX's memory you used:
  36250 strings out of 471925
  125086,1373583 words of node,token memory allocated
- 698 words of node memory still in use:
+ 703 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 18
- attribute, 68 glue_spec, 18 attribute_list, 2 write, 1 user_defined, 4 pdf_acti
+ attribute, 69 glue_spec, 18 attribute_list, 2 write, 1 user_defined, 4 pdf_acti
 on nodes
-   avail lists: 1:4,2:2279,3:611,4:341,5:367,6:269,7:7740,8:110,9:2344,10:16,11:
+   avail lists: 1:4,2:2279,3:611,4:341,5:366,6:269,7:7740,8:110,9:2344,10:16,11:
 471
  62039 multiletter control sequences out of 65536+600000
  72 fonts using 30901743 bytes
@@ -1604,7 +1604,7 @@ on nodes
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
 c:/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c
 :/Windows/Fonts/arial.ttf><c:/Windows/Fonts/arialbd.ttf>
-Output written on Report.pdf (7 pages, 306493 bytes).
+Output written on Report.pdf (7 pages, 304356 bytes).
 
 PDF statistics: 144 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams

@@ -407,6 +407,10 @@ if (knitr::is_html_output()) {
 }
 ```
 
+
+# Ədəbiyyat
+
+```{r cleanup, include=FALSE}
 # List of extensions to delete
 exts <- c("log", "aux", "out", "tex")
 base <- tools::file_path_sans_ext(knitr::current_input())
@@ -414,9 +418,6 @@ for (ext in exts) {
   f <- paste0(base, ".", ext)
   if (file.exists(f)) file.remove(f)
 }
-# Ədəbiyyat
-
-```{r cleanup, include=FALSE}
 # Get the directory of the current input file
 main_file <- knitr::current_input()
 if (is.null(main_file) || main_file == "") {
