@@ -46,9 +46,7 @@ This project delivers a robust framework for analyzing and visualizing customer 
 
 ## Project Structure
 
-
-```
-.
+``` 
 ├── main.Rmd           # Main R Markdown analysis and visualization script
 ├── data/              # Data files and sources
 ├── output/            # Generated reports and figures
