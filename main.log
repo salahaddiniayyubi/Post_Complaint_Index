@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.5.3)  8 MAY 2025 12:01
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.5.3)  8 MAY 2025 12:30
  restricted system commands enabled.
-**main.tex
-(./main.tex
+**C:/Users/samir/Desktop/e-complaint/output/main.tex
+(c:/Users/samir/Desktop/e-complaint/output/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -1564,15 +1564,19 @@ Overfull \hbox (18.69557pt too wide) in alignment at lines 437--468
  []
 
 [4]
-<main_files/figure-latex/plot-1.png, id=50, 712.14857pt x 424.08035pt>
-File: main_files/figure-latex/plot-1.png Graphic file (type png)
-<use main_files/figure-latex/plot-1.png>
-Package luatex.def Info: main_files/figure-latex/plot-1.png  used on input line
- 503.
+<C:/Users/samir/Desktop/e-complaint/output/main_files/figure-latex/plot-1.png, 
+id=50, 712.14857pt x 424.08035pt>
+File: C:/Users/samir/Desktop/e-complaint/output/main_files/figure-latex/plot-1.
+png Graphic file (type png)
+<use C:/Users/samir/Desktop/e-complaint/output/main_files/figure-latex/plot-1.p
+ng>
+Package luatex.def Info: C:/Users/samir/Desktop/e-complaint/output/main_files/f
+igure-latex/plot-1.png  used on input line 503.
 (luatex.def)             Requested size: 469.75871pt x 279.73859pt.
 
 
-[5<./main_files/figure-latex/plot-1.png>]
+[5<c:/Users/samir/Desktop/e-complaint/output/main_files/figure-latex/plot-1.png>
+]
 Overfull \hbox (0.14061pt too wide) in paragraph at lines 558--561
 []$\TU/Arial(0)/m/n/10 h t t p s : / / w w w . o f c o m . o r g . u k / _ _ d 
 a t a / a s s e t s / p d f _ f i l e / 0 0 2 3 / 2 6 8 1 7 5 / a n n u al - m 
@@ -1589,7 +1593,7 @@ L3 programming layer <2025-04-14>
 )
 
 Here is how much of LuaTeX's memory you used:
- 36249 strings out of 471925
+ 36250 strings out of 471925
  125086,1373583 words of node,token memory allocated
  703 words of node memory still in use:
    8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 3 glyph, 18
@@ -1598,12 +1602,12 @@ on nodes
    avail lists: 1:4,2:2279,3:611,4:341,5:366,6:269,7:7740,8:110,9:2344,10:16,11:
 471
  62039 multiletter control sequences out of 65536+600000
- 72 fonts using 30901703 bytes
- 98i,12n,116p,1124b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72 fonts using 30901743 bytes
+ 98i,12n,116p,1246b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
 c:/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c
 :/Windows/Fonts/arial.ttf><c:/Windows/Fonts/arialbd.ttf>
-Output written on main.pdf (7 pages, 303695 bytes).
+Output written on main.pdf (7 pages, 304769 bytes).
 
 PDF statistics: 144 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams
