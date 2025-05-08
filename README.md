@@ -13,7 +13,7 @@ This project delivers a robust framework for analyzing and visualizing customer 
   Calculates the difference between expected and actual complaint shares, classifying operators as "Yüksək" (High), "Qənaətbəxş" (Satisfactory), or "Zəif" (Poor) based on their complaint index.
 
 - **Professional Visualizations:**  
-  Generates log-log scatter plots comparing expected vs. actual complaint shares, with intuitive color and size coding for operator performance and complaint volume.
+  Generates scatter plots (in log scale) comparing expected vs. actual complaint shares, with intuitive color and size coding for operator performance and complaint volume.
 
 - **Customizable & Extensible:**  
   Easily adapt thresholds, visual styles, and data sources for different regulatory environments or reporting requirements.
@@ -63,7 +63,7 @@ This project is provided under the MIT License. See [LICENSE](LICENSE) for detai
 
 For questions, suggestions, or collaboration, please contact:
 
-- **Samir Salahaddini Ayyubi**  
+- **Samir Orujov**  
   Head of Statistics Division  
   Information Communication Technologies Agency (Telecom regulator of Azerbaijan)  
   salahaddini.ayyubi@gmail.com
