@@ -407,5 +407,29 @@ if (knitr::is_html_output()) {
 }
 ```
 
-
+# List of extensions to delete
+exts <- c("log", "aux", "out", "tex")
+base <- tools::file_path_sans_ext(knitr::current_input())
+for (ext in exts) {
+  f <- paste0(base, ".", ext)
+  if (file.exists(f)) file.remove(f)
+}
 # Ədəbiyyat
+
+```{r cleanup, include=FALSE}
+# Get the directory of the current input file
+main_file <- knitr::current_input()
+if (is.null(main_file) || main_file == "") {
+  main_file <- rmarkdown::metadata$input
+}
+if (is.null(main_file) || main_file == "") {
+  main_file <- "main.Rmd" # fallback
+}
+main_dir <- dirname(normalizePath(main_file))
+
+# List and delete all .log files in the directory
+log_files <- list.files(main_dir, pattern = "\\.log$", full.names = TRUE)
+for (f in log_files) {
+  if (file.exists(f)) file.remove(f)
+}
+```
