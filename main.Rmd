@@ -1,5 +1,5 @@
 ---
-title: "2024-cü İlin II Yarısı Üçün Poçt Operatorlarının Şikayət İndeksi"
+title: "2024-cü İlin II Yarısı Üçün Poçt Rabitəsi Operatorlarının Şikayət İndeksi"
 author: "İCTA"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 bibliography: references.bib
@@ -49,7 +49,7 @@ header-includes:
         \includegraphics[width=0.30\textwidth, keepaspectratio]{ikta.eps}
         
         \vspace{1.5cm}
-        {\fontsize{26}{34}\selectfont\bfseries \textcolor{mydarkblue}{2024-cü İlin II Yarısı Üçün Poçt Operatorlarının Şikayət İndeksi}}\\[1.2em]
+        {\fontsize{26}{34}\selectfont\bfseries \textcolor{mydarkblue}{2024-cü İlin II Yarısı Üçün Poçt Rabitəsi Operatorlarının Şikayət İndeksi}}\\[1.2em]
         {\fontsize{18}{24}\selectfont\bfseries \textcolor{black}{Analitik Hesabat}}\\[1.2em]
         {\fontsize{15}{20}\selectfont\bfseries \textcolor{mydarkblue}{İnformasiya Kommunikasiya Texnologiyaları Agentliyi (İKTA)}}\\[0.5em]
         {\fontsize{13}{18}\selectfont Azərbaycan Respublikasının Rəqəmsal İnkişaf və Nəqliyyat Nazirliyi}\\[1.5em]
@@ -73,21 +73,25 @@ library(DT)  # For interactive tables in HTML output
 
 # Giriş
 
-Azərbaycanda poçt xidmətləri sektorunun son illərdə dinamik inkişafı və bazarda yeni iştirakçıların meydana çıxması rəqabət mühitinin güclənməsinə və xidmət keyfiyyətinin yüksəlməsinə səbəb olmuşdur [@wik2009]. Bu proses, vətəndaşların məmnunluğunun artırılması və istifadəçi hüquqlarının qorunması baxımından dövlət siyasətinin əsas prioritetlərindən birinə çevrilmişdir. Müasir tənzimləmə yanaşmalarında poçt operatorlarının fəaliyyətinin şəffaf və obyektiv qiymətləndirilməsi, həmçinin xidmət keyfiyyətinin davamlı monitorinqi xüsusi əhəmiyyət kəsb edir [@azernews2019].
+Azərbaycanda poçt xidmətləri sektorunun son illərdə dinamik inkişafı və bazarda yeni iştirakçıların meydana çıxması rəqabət mühitinin güclənməsinə 
+və xidmət keyfiyyətinin yüksəlməsinə səbəb olmuşdur [@wik2009]. 
+Bu proses, vətəndaşların məmnunluğunun artırılması və istifadəçi hüquqlarının qorunması baxımından dövlət siyasətinin əsas prioritetlərindən
+ birinə çevrilmişdir. Müasir tənzimləmə yanaşmalarında poçt rabitəsi operatorlarının fəaliyyətinin şəffaf və obyektiv qiymətləndirilməsi,
+  həmçinin xidmət keyfiyyətinin davamlı monitorinqi xüsusi əhəmiyyət kəsb edir.
 
-İnformasiya Kommunikasiya Texnologiyaları Agentliyi (İKTA) tərəfindən tətbiq edilən **Şikayət İndeksi** metodologiyası, poçt operatorlarının bazar payı ilə müqayisədə şikayət səviyyəsini obyektiv şəkildə ölçmək və sektorun şəffaflığını təmin etmək məqsədi daşıyır [@ofcom2023]. Bu indeks beynəlxalq tənzimləmə təcrübəsinə əsaslanaraq, operatorların performansının qiymətləndirilməsində və tənzimləyici tədbirlərin prioritetləşdirilməsində effektiv alət kimi çıxış edir [@wik2009; @azernews2019].
+İnformasiya Kommunikasiya Texnologiyaları Agentliyi (İKTA) tərəfindən tətbiq edilən **Şikayət İndeksi** metodologiyası, poçt rabitəsi operatorlarının bazar payı ilə müqayisədə şikayət səviyyəsini obyektiv şəkildə ölçmək və sektorun şəffaflığını təmin etmək məqsədi daşıyır [@ofcom2023]. Bu indeks beynəlxalq tənzimləmə təcrübəsinə əsaslanaraq, operatorların performansının qiymətləndirilməsində və tənzimləyici tədbirlərin prioritetləşdirilməsində effektiv alət kimi çıxış edir [@wik2009].
 
 Hazırkı hesabatın əsas məqsədi aşağıdakılardır:
 
-1. Poçt operatorlarının xidmət keyfiyyətinin qiymətləndirilməsi üçün beynəlxalq təcrübə və elmi əsaslara dayanan **Şikayət İndeksi** metodologiyasını hazırlamaq;
-2. Poçt operatorlarının xidmət keyfiyyətini bazar payları ilə müqayisədə obyektiv qiymətləndirmək;
+1. Poçt rabitəsi operatorlarının xidmət keyfiyyətinin qiymətləndirilməsi üçün beynəlxalq təcrübə və elmi əsaslara dayanan **Şikayət İndeksi** metodologiyasını hazırlamaq;
+2. Poçt rabitəsi operatorlarının xidmət keyfiyyətini bazar payları ilə müqayisədə obyektiv qiymətləndirmək;
 3. İstehlakçı məmnuniyyətini kəmiyyətləşdirən göstəricilər əsasında performans təhlili aparmaq.
 
 İKTA tərəfindən "E-Şikayət" sisteminin təkmilləşdirilməsi və şikayətlərin elektron əsasda toplanması,
-statistik təhlil imkanlarını genişləndirmiş və poçt sahəsində tənzimləmənin həyata keçirilməsi üçün yeni mərhələ yaratmışdır [@icta2009]. 
-Lakin, poçt operatorlarının fəaliyyətinin obyektiv qiymətləndirilməsi üçün meyarlar işlənib hazırlanmamışdır. 
-Bu hesabatda, poçt operatorları üçün beynəlxalq təcrübə və elmi əsaslara söykənən **Şikayət İndeksi** metodologiyası irəli sürülür. 
-Bundan başqa, 2024-cü ilin ikinci yarısı üzrə Azərbaycanda fəaliyyət göstərən poçt operatorlarının  şikayət indeksi irəli sürülən metodologiya əsasında hesablanır və 
+statistik təhlil imkanlarını genişləndirmiş və poçt rabitəsi sahəsində tənzimləmənin həyata keçirilməsi üçün yeni mərhələ yaratmışdır [@icta2009]. 
+Lakin, poçt rabitəsi operatorlarının fəaliyyətinin obyektiv qiymətləndirilməsi üçün meyarlar işlənib hazırlanmamışdır. 
+Bu hesabatda, poçt rabitəsi operatorları üçün beynəlxalq təcrübə və elmi əsaslara söykənən **Şikayət İndeksi** metodologiyası irəli sürülür. 
+Bundan başqa, 2024-cü ilin ikinci yarısı üzrə Azərbaycanda fəaliyyət göstərən poçt rabitəsi operatorlarının  şikayət indeksi irəli sürülən metodologiya əsasında hesablanır və 
 təhlil edilir, nəticələr isə həm cədvəl, həm də vizual formada ictimaiyyətə təqdim olunur.
 
 # Metodologiya
@@ -98,7 +102,7 @@ təhlil edilir, nəticələr isə həm cədvəl, həm də vizual formada ictimai
 
 1. **Bazar Payı (Market Share, $MS_i$):**
 
-   Hər bir poçt operatorunun bazar payı ($MS_i$), həmin operatorun bazar göstəricisinin (cari halda, göndəriş sayı) bütün bazar üzrə ümumi göstəriciyə nisbəti kimi hesablanır. Bu göstərici operatorun ümumi bazarda tutduğu mövqeyi və fəaliyyətinin miqyasını obyektiv şəkildə əks etdirir.
+   Hər bir poçt rabitəsi operatorunun bazar payı ($MS_i$), həmin operatorun bazar göstəricisinin (cari halda, göndəriş sayı) bütün bazar üzrə ümumi göstəriciyə nisbəti kimi hesablanır. Bu göstərici operatorun ümumi bazarda tutduğu mövqeyi və fəaliyyətinin miqyasını obyektiv şəkildə əks etdirir.
 
    $$
    MS_i = \frac{S_i}{\displaystyle\sum_{j=1}^{n} S_j} \times 100\%
@@ -106,7 +110,7 @@ təhlil edilir, nəticələr isə həm cədvəl, həm də vizual formada ictimai
 
    Burada:
    - $MS_i$ - $i$-ci operatorun bazar payı (% ilə ifadə olunur);
-   - $S_i$ - $i$-ci operatorun bazar göstəricisi (göndəriş sayı);
+   - $S_i$ - $i$-ci operatorun bazar göstəricisi (poşt göndərişlərinin sayı);
    - $n$ - ümumi operator sayı;
    - $i$ - ixtiyari $i$ operatoru;
    - $\sum_{j=1}^{n} S_j$ - bütün operatorların bazar göstəricilərinin cəmi.
@@ -146,15 +150,18 @@ Burada:
 
 **İndeksin interpretasiyası aşağıdakı kimidir:**
 
-- $CI_i \leq -10\%$ - **Yüksək Performans** (yaşıl $\textcolor{green}{\large\textbullet}$): Operatorun şikayət payı bazar payından əhəmiyyətli dərəcədə azdır və bu, yüksək xidmət keyfiyyətinin göstəricisidir.
-- $-10\% < CI_i < 10\%$ - **Qənaətbəxş Performans** (sarı $\textcolor{yellow}{\large\textbullet}$): Operatorun şikayət payı bazar payına yaxındır və xidmət keyfiyyəti qənaətbəxş hesab olunur.
-- $CI_i \geq 10\%$ - **Zəif Performans** (qırmızı $\textcolor{red}{\large\textbullet}$): Operatorun şikayət payı bazar payından əhəmiyyətli dərəcədə çoxdur və bu, xidmət keyfiyyətinin aşağı olduğunu göstərir.
+- $CI_i \leq -10\%$ - **Yüksək Performans** (yaşıl $\textcolor{green}{\large\textbullet}$): 
+Operatorun şikayət payı bazar payından əhəmiyyətli dərəcədə azdır və bu, yüksək xidmət keyfiyyətinin göstəricisidir.
+- $-10\% < CI_i < 10\%$ - **Qənaətbəxş Performans** (sarı $\textcolor{yellow}{\large\textbullet}$): 
+Operatorun şikayət payı bazar payına yaxındır və xidmət keyfiyyəti qənaətbəxş hesab olunur.
+- $CI_i \geq 10\%$ - **Zəif Performans** (qırmızı $\textcolor{red}{\large\textbullet}$): 
+Operatorun şikayət payı bazar payından əhəmiyyətli dərəcədə çoxdur və bu, xidmət keyfiyyətinin aşağı olduğunu göstərir.
 
 Bu yanaşma, müxtəlif ölçülü operatorlar arasında obyektiv müqayisə aparmağa imkan verir və tənzimləyici orqan üçün prioritet müdaxilə sahələrini müəyyənləşdirməkdə mühüm rol oynayır.
 
 
 \begin{tcolorbox}[colback=green!10!white,colframe=green!80!black,title={Nümunə Hesablama}]
-\textbf{AZƏRPOÇT} operatoru üçün:
+\textbf{AZƏRPOÇT MMC} poçt rabitəsi operatoru üçün:
 
 \begin{align*}
 S_i &= 4157 \qquad \sum S_j = 10,000 \\
@@ -180,19 +187,20 @@ Belə ki, Universal Postal Union (UPU), Ofcom (Birləşmiş Krallıq), və ERGP 
 Lakin, bu hesabatda tətbiq olunan **şikayət indeksi** (faktiki şikayət payı ilə bazar payı arasındakı fərq) mövcud beynəlxalq yanaşmaların modifikasiya etdirilmiş formasıdır və 
 operatorlar arasında obyektiv müqayisə aparmaq üçün daha aydın və interpretasiya oluna bilən nəticə verir. Cari indeks -100 və 100 arasında dəyişir.
 
-Beləliklə, bazar payı şikayətlərin gözlənilən səviyyəsini müəyyən etmək üçün əsas baza kimi çıxış edir və bu indeksin hesablanması ədalətli müqayisə imkanı yaradır.
+Beləliklə, bazar payı şikayətlərin gözlənilən səviyyəsini müəyyən etmək üçün əsas baza kimi çıxış edir və bu indeksin hesablanması 
+ədalətli müqayisə imkanı yaradır.
 
-# 2024-cü İlin II Yarısı Üçün Poçt Operatorları Üçün Şikayət İndeksinin Hesablanması
+# 2024-cü İlin II Yarısı Üçün Poçt Rabitəsi Operatorları Üçün Şikayət İndeksinin Hesablanması
 
 ## Məlumatlar və Onlar Əsasında Hesablanmış Şikayət İndeksi
 
-Cədvəl \ref{tab:complaint-index-table}-də, 2024-cü ilin ikinci yarısı üzrə Azərbaycanda fəaliyyət göstərən əsas poçt operatorlarının şikayət indeksləri təqdim olunur. Hər bir operator üçün bazar payı, daxil olan şikayətlərin sayı, həmin şikayətlərin ümumi şikayətlərdəki payı, gözlənilən şikayət payı (bazar payına əsaslanan) və nəticədə əldə olunan şikayət indeksi göstərilib.
+Cədvəl \ref{tab:complaint-index-table}-də, 2024-cü ilin ikinci yarısı üzrə Azərbaycanda fəaliyyət göstərən əsas poçt rabitəsi operatorlarının şikayət indeksləri təqdim olunur. Hər bir operator üçün bazar payı, daxil olan şikayətlərin sayı, həmin şikayətlərin ümumi şikayətlərdəki payı, gözlənilən şikayət payı (bazar payına əsaslanan) və nəticədə əldə olunan şikayət indeksi göstərilib.
 
 Cədvəldə diqqət çəkən əsas məqamlar aşağıdakılardır:
 
-- **LIMAK AZ** operatoru 2.37\% bazar payına malik olmasına baxmayaraq, ümumi şikayətlərin 12.76\%-ni alıb və şikayət indeksi 10.39 olaraq ən yüksək səviyyədədir. Bu, operatorun xidmət keyfiyyətində ciddi problemlərin olduğunu göstərir və "Zəif" qiymətləndirilib.
+- **LIMAK AZ MMC** operatoru 2.37\% bazar payına malik olmasına baxmayaraq, ümumi şikayətlərin 12.76\%-ni alıb və şikayət indeksi 10.39 olaraq ən yüksək səviyyədədir. Bu, operatorun xidmət keyfiyyətində ciddi problemlərin olduğunu göstərir və "Zəif" qiymətləndirilib.
 - Digər operatorların əksəriyyəti üçün şikayət indeksi 10\%-dən aşağıdır və onlar "Qənaətbəxş" kateqoriyasında yer alır. Bu, onların şikayət səviyyəsinin bazar payı ilə nisbətən uyğun olduğunu göstərir.
-- **AZƏRPOÇT** operatoru isə ən böyük bazar payına (41.57\%) malik olsa da, şikayət indeksi mənfi (-6.26) olub, bu operatorun şikayət səviyyəsinin bazar payından aşağı olduğunu və xidmət keyfiyyətinin qənaətbəxş olduğunu göstərir.
+- **AZƏRPOÇT MMC** poçt rabitəsi operatoru isə ən böyük bazar payına (41.57\%) malik olsa da, şikayət indeksi mənfi (-6.26) olub, bu operatorun şikayət səviyyəsinin bazar payından aşağı olduğunu və xidmət keyfiyyətinin qənaətbəxş olduğunu göstərir.
 
 Ümumilikdə, cədvəl operatorlar arasında xidmət keyfiyyəti və istifadəçi məmnuniyyəti baxımından obyektiv müqayisə aparmağa imkan verir. 
 Şikayət indeksi yüksək olan operatorlar üçün əlavə tənzimləyici tədbirlərin görülməsi məqsədəuyğun hesab olunur.
@@ -262,7 +270,7 @@ filtered_df <- merged %>%
 filtered_df$Qiymətləndirmə <- stringr::str_remove(filtered_df$Qiymətləndirmə, " \\(#?[A-Fa-f0-9]{6}\\)")
 
 
-kableExtra::kable(filtered_df, booktabs = TRUE, caption = "\\label{tab:complaint-index-table}{Poçt Operatorlarının Şikayət İndeksi}", escape = TRUE) %>%
+kableExtra::kable(filtered_df, booktabs = TRUE, caption = "\\label{tab:complaint-index-table}{Poçt Rabitəsi Operatorlarının Şikayət İndeksi}", escape = TRUE) %>%
   kableExtra::kable_styling(
     latex_options = c("striped", "hold_position", "scale_down"),
     font_size = 9,
@@ -356,13 +364,13 @@ guides(
 
 # Nəticə
 
-Bu hesabatda poçt operatorlarının fəaliyyətinin obyektiv və şəffaf qiymətləndirilməsi üçün beynəlxalq təcrübəyə və elmi əsaslara söykənən Şikayət İndeksi metodologiyası təqdim olundu. Hesablamalar göstərdi ki, şikayətlərin bazar payı ilə müqayisədə təhlili operatorlar arasında xidmət keyfiyyəti və istifadəçi məmnuniyyəti baxımından obyektiv müqayisə aparmağa imkan verir. 
+Bu hesabatda poçt rabitəsi operatorlarının fəaliyyətinin obyektiv və şəffaf qiymətləndirilməsi üçün beynəlxalq təcrübəyə və elmi əsaslara söykənən Şikayət İndeksi metodologiyası təqdim olundu. Hesablamalar göstərdi ki, şikayətlərin bazar payı ilə müqayisədə təhlili operatorlar arasında xidmət keyfiyyəti və istifadəçi məmnuniyyəti baxımından obyektiv müqayisə aparmağa imkan verir. 
 
-2024-cü ilin ikinci yarısına dair məlumatların təhlili göstərdi ki, bəzi operatorlar (məsələn, LIMAK AZ) bazar payına nisbətən daha çox şikayət alaraq "zəif" kateqoriyasında yer alıb, əksər operatorlar isə "qənaətbəxş" səviyyədə performans göstərmişdir. Ən böyük bazar payına malik olan AZƏRPOÇT-un şikayət indeksi isə mənfi olmuş və bu operatorun xidmət keyfiyyətinin ümumilikdə qənaətbəxş olduğunu göstərmişdir (bax: Cədvəl 1 və Şəkil 1).
+2024-cü ilin ikinci yarısına dair məlumatların təhlili göstərdi ki, bəzi operatorlar (məsələn, LIMAK AZ) bazar payına nisbətən daha çox şikayət alaraq "zəif" kateqoriyasında yer alıb, əksər operatorlar isə "qənaətbəxş" səviyyədə performans göstərmişdir. Ən böyük bazar payına malik olan AZƏRPOÇT MMC-nin şikayət indeksi isə mənfi olmuş və bu operatorun xidmət keyfiyyətinin ümumilikdə qənaətbəxş olduğunu göstərmişdir (bax: Cədvəl 1 və Şəkil 1).
 
 Təklif olunan metodologiya tənzimləyici orqan üçün prioritet müdaxilə sahələrinin müəyyənləşdirilməsində, istifadəçi hüquqlarının qorunmasında və sektorun davamlı inkişafında mühüm rol oynayır. Şikayət indeksi yüksək olan operatorlar üçün xidmət keyfiyyətinin artırılması istiqamətində əlavə tədbirlərin görülməsi tövsiyə olunur. Eyni zamanda, bu yanaşma sektor üzrə şəffaflığın və ictimai hesabatlılığın artırılmasına xidmət edir.
 
-Gələcəkdə şikayət indeksinin dinamikası üzrə davamlı monitorinqin aparılması, metodologiyanın daha da təkmilləşdirilməsi və beynəlxalq təcrübənin izlənməsi məqsədəuyğun hesab olunur. Bu, həm poçt operatorlarının rəqabət qabiliyyətinin artırılmasına, həm də vətəndaş məmnuniyyətinin davamlı yüksəldilməsinə töhfə verəcəkdir.
+Gələcəkdə şikayət indeksinin dinamikası üzrə davamlı monitorinqin aparılması, metodologiyanın daha da təkmilləşdirilməsi və beynəlxalq təcrübənin izlənməsi məqsədəuyğun hesab olunur. Bu, həm poçt rabitəsi operatorlarının rəqabət qabiliyyətinin artırılmasına, həm də vətəndaş məmnuniyyətinin davamlı yüksəldilməsinə töhfə verəcəkdir.
 
 
 ```{r interactive-table}
